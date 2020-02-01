@@ -1,13 +1,141 @@
+*,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img {
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: RobotoCondensed;
+    src: url(assets/roboto-condensed.light.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: EconomicaBold;
+    src: url(assets/economica-bold.ttf);
+}
+
+#main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+body {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'RobotoCondensed';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'EconomicaBold';
+}
+
+h2,
+h3 {
+    margin-bottom: 1rem;
+}
+
+.profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+}
+
+.title-fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+    animation-duration: 2s;
+}
+
+.title-fade-in {
+    opacity: 100;
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 100
+    }
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 100
+    }
+}
+
+button {
+    cursor: pointer;
+    padding: .3rem 1rem;
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+}
+
+.project img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.heading {
+    background: #f3f3f3;
+}
+
+.education li {
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.container {
+    max-width: 960px;
+}
+
+.pricing-header {
+    max-width: 700px;
+}
+
+.card-deck .card {
+    min-width: 220px;
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+ul li {
+    margin: .5rem 0;
+    text-align: left;
 }
